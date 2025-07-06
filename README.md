@@ -48,27 +48,12 @@ EventIX adalah studi kasus sistem registrasi peserta event online yang menampilk
 
 ## 🔌 Endpoint API
 
-### json-server (Development)
+### json-server
 ```
 GET    /participants     - Mendapatkan semua peserta
 POST   /participants     - Membuat peserta baru
 PATCH  /participants/:id - Update data peserta
 DELETE /participants/:id - Menghapus peserta
-```
-
-### Supabase (Production - Opsional)
-```sql
--- Tabel participants
-CREATE TABLE participants (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  full_name TEXT NOT NULL,
-  email TEXT UNIQUE NOT NULL,
-  institution TEXT NOT NULL,
-  ticket_type TEXT NOT NULL,
-  qr_code TEXT UNIQUE NOT NULL,
-  checkin_status BOOLEAN DEFAULT false,
-  created_at TIMESTAMPTZ DEFAULT NOW()
-);
 ```
 
 ## 🧪 Pengujian
@@ -160,28 +145,6 @@ Pengguna dapat mengganti bahasa menggunakan toggle di navbar. Preferensi bahasa 
 - **Icons**: Heroicons
 - **Typography**: Font Inter
 - **Spacing**: Sistem 8px
-
-## ☁️ Deployment
-
-### Vercel (Recommended)
-Aplikasi ini dapat dengan mudah dideploy ke **Vercel**:
-
-1. Connect repository ke Vercel
-2. Configure build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-3. Deploy
-
-### Supabase Integration (Production)
-Untuk production, gunakan Supabase sebagai backend:
-
-1. Buat project Supabase
-2. Set up tabel `participants`
-3. Tambahkan environment variables:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
 
 ## 📁 Struktur Proyek
 
