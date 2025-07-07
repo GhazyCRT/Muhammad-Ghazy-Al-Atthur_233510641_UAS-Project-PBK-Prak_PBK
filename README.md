@@ -8,7 +8,7 @@ EventIX adalah studi kasus sistem registrasi peserta event online yang menampilk
 
 - **Nama Proyek**: EventIX
 - **Teknologi Utama**: Vue 3 (Composition API), Vite, json-server, Pinia, Vitest, TailwindCSS, DaisyUI
-- **Database**: json-server (development), Supabase (production - opsional)
+- **Database**: json-server
 - **Styling**: TailwindCSS + DaisyUI + Animate.css
 - **Bahasa**: Dukungan bilingual (Bahasa Indonesia dan Inggris)
 
