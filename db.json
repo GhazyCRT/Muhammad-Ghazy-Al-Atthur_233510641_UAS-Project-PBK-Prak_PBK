@@ -11,24 +11,24 @@
       "created_at": "2025-01-01T00:00:00.000Z"
     },
     {
-      "id": "2",
-      "full_name": "Jane Smith",
-      "email": "jane@example.com",
-      "institution": "Business School",
-      "ticket_type": "Regular",
-      "qr_code": "EVT-002-67890",
-      "checkin_status": true,
-      "created_at": "2025-01-02T00:00:00.000Z"
-    },
-    {
       "id": "b562",
       "full_name": "Dafri Mulya",
       "email": "dafri@uir.id",
       "institution": "UIR",
       "ticket_type": "Student",
       "qr_code": "EVT-1751813572826-PT43HEZ1J",
-      "checkin_status": false,
+      "checkin_status": true,
       "created_at": "2025-07-06T14:52:52.826Z"
+    },
+    {
+      "id": "5cec",
+      "full_name": "Ghazy",
+      "email": "ghazy@gmail.com",
+      "institution": "UIR",
+      "ticket_type": "Student",
+      "qr_code": "EVT-1752053208959-KOJQA3LD0",
+      "checkin_status": true,
+      "created_at": "2025-07-09T09:26:48.959Z"
     }
   ]
 }
